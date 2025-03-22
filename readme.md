@@ -120,7 +120,7 @@ Type of applications:
 [ ] Alerts & Prompts
 [x] Variables
 [x] Data Types
-[ ] Operators
+[x] Operators
 
 Browsers and Javascript Parser Engines:
 
@@ -128,3 +128,9 @@ Browsers and Javascript Parser Engines:
 - Firefox: SpiderMonkey
 - Safari: JavaScriptCore
 - Edge: Chakra
+
+### Day - 3
+
+[x] Conditionals - if, else
+[x] Loops - while, do...while, for
+[ ] Functions
