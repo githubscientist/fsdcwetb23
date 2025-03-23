@@ -134,3 +134,9 @@ Browsers and Javascript Parser Engines:
 [x] Conditionals - if, else
 [x] Loops - while, do...while, for
 [ ] Functions
+
+### Day - 4
+
+[ ] Hoisting & scope
+[ ] Arrays & Array Methods
+[ ] Object and JSON iteration
