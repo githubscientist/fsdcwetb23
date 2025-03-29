@@ -694,10 +694,198 @@ DataTypes: type of data we store in a variable
 // console.log(numbers);
 
 // methods
-let numbers = [5, 3, 1, 4, 2];
+// let numbers = [5, 3, 1, 4, 2];
 
-numbers.push(7);
-numbers.push(6);
-numbers.push(10, 12, 11);
+// numbers.push(7);
+// numbers.push(6);
+// numbers.push(10, 12, 11);
 
-console.log(numbers);
+// console.log(numbers);
+
+// Array: To store multiple elements in a variable
+// let numbers = [3, 7, 1, 6, 2, 4, 5];
+
+// Javascript arrays supports storing multiple data types
+// let fruits = ["apple", "orange", "watermelon", "banana", "grapes"];
+
+// let person = ["sathish", 35, "software developer", ["cooking", "fishing"]];
+
+/*
+    [3, 7, 1, 6, 2, 4, 5]
+    [0][1][2][3][4][5][6]
+*/
+
+// index: location of a particular value inside the array.
+// console.log(numbers);
+
+// to access the first value
+// console.log(numbers[0]);
+
+// to access the second value
+// console.log(numbers[1]);
+
+// data manipulation: create an array, add elements, modify elements, delete an element, search, computations, traversal
+
+// let numbers = [3, 1, 2, 4, 5];
+
+// // push: to push an element to the end of the array
+// numbers.push(6);
+// numbers.push(7);
+// numbers.push(8, 9, 10);
+
+// // unshift: to push an element to the beginning of the array
+// numbers.unshift(11);
+// numbers.unshift(12);
+// numbers.unshift(13, 14, 15);
+
+// // pop: to remove an element from the end of the array
+// numbers.pop();
+// numbers.pop();
+
+// // shift: to remove an element from the beginning of the array
+// numbers.shift();
+// numbers.shift();
+
+/*
+    [15, 11, 1, 4, 5, 6, 7, 8]
+    [0] [1] [2] [3][4][5][6][7][8][9][10]
+*/
+
+// to insert an element at any position
+// numbers.splice(6, 5, 10);
+
+// to delete an element at any position
+// numbers.splice(2, 5);
+
+// for (let i = 1; i <= 3; i++) {
+//     numbers.splice(i, 1);
+// }
+
+// console.log(numbers);
+
+// -----------------
+
+// let numbers = [3, 1, 2, 4, 5];
+
+// console.log(numbers[0]);
+// console.log(numbers[1]);
+// console.log(numbers[2]);
+// console.log(numbers[3]);
+// console.log(numbers[4]);
+
+
+// iteration or traversal: visiting all the elements inside an array
+// from the first to the last
+
+// task: to print all the elements of an array
+
+/*
+    [3, 1, 2, 4, 5]
+    [0][1][2][3][4]
+
+    index: 0, 1, 2, 3, 4,
+    stop: index == 5, index > 5
+    run: index < 5
+*/
+
+// let numbers = [3, 1, 2, 4, 5];
+
+// let index = 0;
+// while (index < numbers.length) {
+//     console.log(numbers[index]);
+//     index++;
+// }
+
+
+// for (let index = 0; index < numbers.length; index++) {
+//     console.log(numbers[index]);
+// }
+
+// let index = 0;
+// while (index < numbers.length) {
+//     console.log(numbers[index]);
+//     index++;
+// }
+
+// let numbers = [3, 1, 2, 4, 5];
+// let index = 0;
+// do {
+//     console.log(numbers[index]);
+//     index++;
+// } while (index < numbers.length);
+
+// ES6: 2015
+// for...in, for...of
+
+// let numbers = [3, 1, 2, 4, 5];
+
+// // for...in loop
+// // index: 0, 1, 2, 3, 4
+// // for (let index in numbers) {
+// //     console.log(numbers[index]);
+// // }
+
+// // for...of
+// for (let number of numbers) {
+//     console.log(number);
+// }
+
+// dependency: callbacks
+// array methods: forEach, map, reduce, filter
+
+/*
+    Object:
+        Array [value, ...],
+        JS Object {key:value, ...}
+
+    [] -> Arrays
+    {} -> JS Object or Object
+
+    JSON - JS Object
+
+    JSON: JavaScript Object Notation
+    JSON String - ""
+*/
+
+// console.log(typeof {})
+
+// let personArray = ["sathish", 35, "developer"]
+
+// let personObject = {
+//     name: "sathish",
+//     age: 35,
+//     profession: "developer"
+// }
+
+// console.log(personArray[0]);
+// console.log(personObject["profession"]);
+// console.log(personObject.name);
+
+// to convert JS object to JSON string
+// console.log(JSON.stringify(personObject));
+
+// let JSONString = '{"name":"sathish","age":35,"profession":"developer"}';
+
+// console.log(JSONString);
+
+// console.log(JSON.parse(JSONString));
+// console.log(personObject);
+
+let personArray = ["sathish", 35, "developer"]
+
+let personObject = {
+    name: "sathish",
+    age: 35,
+    profession: "developer"
+}
+
+for (let key in personObject) {
+    console.log(key, personObject[key]);
+}
+
+// coding best practices
+// variable names, function names, class names, object names, references -> meaningful or associated with the context
+// variable names -> camelCase
+// method names -> camelCase or preferrably all lowercase or method_name
+// class names -> Uppercase
+// object names -> all lowercase or camelCase object_name
