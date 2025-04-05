@@ -133,10 +133,52 @@ Browsers and Javascript Parser Engines:
 
 [x] Conditionals - if, else
 [x] Loops - while, do...while, for
-[ ] Functions
+[x] Functions
 
 ### Day - 4
 
-[ ] Hoisting & scope
-[ ] Arrays & Array Methods
-[ ] Object and JSON iteration
+[x] Hoisting & scope
+[x] Arrays & Array Methods
+[x] Object and JSON iteration
+
+HTML Tags
+
+Reprsented using ankle brackets (< >)
+
+<!DOCTYPE html>
+
+This is for telling the browser that this is an HTML document and uses HTML5.
+
+<html>
+
+This is the root element of an HTML document. It contains all other elements.
+
+Semantics:
+
+There are special software for the visually impaired people.
+
+<h1> to <h6>
+
+These are the heading tags. <h1> is the largest and <h6> is the smallest.
+
+<p>
+This is the paragraph tag. It is used to define a paragraph of text.
+
+<strong>
+This is the strong tag. It is used to define important text. It is usually displayed in bold.
+
+<em>
+This is the em tag. It is used to define emphasized text. It is usually displayed in italics.
+
+<ul>
+This is the unordered list tag. It is used to define a list of items. The items are usually displayed with bullet points.
+
+<ol>
+This is the ordered list tag. It is used to define a list of items. The items are usually displayed with numbers.
+
+[x] What is HTML & Why to use?
+[x] Basic Tags
+[ ] div Vs span
+[x] Semantic Tags
+[ ] forms
+[ ] Tables

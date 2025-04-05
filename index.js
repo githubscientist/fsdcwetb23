@@ -871,17 +871,17 @@ DataTypes: type of data we store in a variable
 // console.log(JSON.parse(JSONString));
 // console.log(personObject);
 
-let personArray = ["sathish", 35, "developer"]
+// let personArray = ["sathish", 35, "developer"]
 
-let personObject = {
-    name: "sathish",
-    age: 35,
-    profession: "developer"
-}
+// let personObject = {
+//     name: "sathish",
+//     age: 35,
+//     profession: "developer"
+// }
 
-for (let key in personObject) {
-    console.log(key, personObject[key]);
-}
+// for (let key in personObject) {
+//     console.log(key, personObject[key]);
+// }
 
 // coding best practices
 // variable names, function names, class names, object names, references -> meaningful or associated with the context
@@ -889,3 +889,190 @@ for (let key in personObject) {
 // method names -> camelCase or preferrably all lowercase or method_name
 // class names -> Uppercase
 // object names -> all lowercase or camelCase object_name
+
+
+// --------------------
+
+// JS Object
+// const JSObject = {
+//     name: 'abc',
+//     age: 20,
+//     isEligible: true,
+//     salary: 10000,
+//     hobbies: [
+//         'fishing',
+//         'cooking',
+//         'driving'
+//     ],
+//     values: {
+//         key1: 'value1',
+//         key2: 'value2'
+//     }
+// }
+
+// // to JSON String
+// let JSONString = JSON.stringify(JSObject);
+
+// '{"name":"abc","age":20,"isEligible":true,"salary":10000,"hobbies":["fishing","cooking","driving"],"values":{"key1":"value1","key2":"value2"}}'
+
+// console.log(typeof JSONString);
+
+// console.log(JSONString[1]);
+
+// console.log(JSON.parse(JSONString).values["key1"]);
+
+// const JSObjects = [
+//     {
+//         name: 'abc',
+//         age: 20,
+//         isEligible: true,
+//         salary: 10000,
+//         hobbies: [
+//             'fishing',
+//             'cooking',
+//             'driving'
+//         ],
+//         values: {
+//             key1: 'value1',
+//             key2: 'value2'
+//         }
+//     },
+//     {
+//         name: 'xyz',
+//         age: 25,
+//         isEligible: false,
+//         salary: 20000,
+//         hobbies: [
+//             'reading',
+//             'writing'
+//         ],
+//         values: {
+//             key1: 'value3',
+//             key2: 'value4'
+//         }
+//     }
+// ]
+
+// const JSObject = {
+//     name: 'abc',
+//     age: 20,
+//     isEligible: true,
+//     salary: 10000,
+//     hobbies: [
+//         'fishing',
+//         'cooking',
+//         'driving'
+//     ],
+//     values: {
+//         key1: 'value1',
+//         key2: 'value2'
+//     }
+// }
+
+// Object.entries(JSObject)
+//     .forEach((entry) => {
+//         console.log(entry[0], entry[1]);
+//     })
+
+// for (let key in JSObject) {
+//     console.log(key, JSObject[key]);
+// }
+
+// console.log(Object.keys(JSObject));
+
+// console.log(Object.values(JSObject));
+
+// console.log(Object.entries(JSObject));
+
+// for (let index = 0; index < Object.keys(JSObject).length; index++) {
+//     console.log(Object.keys(JSObject)[index], JSObject[Object.keys(JSObject)[index]]);
+// }
+
+// Object.keys(JSObject)
+//     .forEach(key => {
+//         console.log(key, JSObject[key]);
+//     })
+
+// Object.values(JSObject)
+//     .forEach(value => {
+//         console.log(value);
+//     })
+
+// Object.entries(JSObject)
+//     .forEach((entry) => {
+//         console.log(entry[0], entry[1]);
+//     })
+
+// Hoisting and Scope
+// Scope: the visibility of a variable or acessibility of a variable
+/*
+    Types of Scopes:
+
+    - Global Scope
+        - The variable is accessible anywhere in the program
+        - The variable is declared outside of any function or block
+    - Local Scope
+        - The variable is accessible only inside the function or block
+        - The variable is declared inside a function or block
+    - Block Scope
+        - The variable is accessible only inside the block
+        - The variable is declared inside a block
+        - let, const
+    - Function Scope
+        - The variable is accessible only inside the function
+        - The variable is declared inside a function
+*/
+
+// let x = 10; // global scope
+// let keyword -> block scope
+
+// {
+//     let x = 20; // block scope
+//     // this is a block
+//     console.log(x);
+// }
+
+// console.log(x);
+// var keyword -> function scope
+
+// var x = 10;
+
+// // var x = 20;// latest value
+
+// {
+//     var x = 20;
+//     // this is a block
+//     console.log(x);
+// }
+
+// console.log(x);
+
+// // let -> block scope
+// for (let i = 1; i <= 10; i++);
+// console.log(i);
+
+// var -> function scope
+// for (var i = 1; i <= 10; i++);
+// console.log(i);
+
+// const x = 10;
+
+// x = 20;
+
+// console.log(x);
+
+/*
+    Hoisting:
+        - The process of moving the variable and function declarations to the top of the scope
+*/
+
+// x = 5;
+
+// console.log(x);
+// var x; // hoisted to the top
+
+// sayHello();
+
+// var sayHello = function () {
+//     console.log("Hello!");
+// }
