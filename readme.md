@@ -204,8 +204,8 @@ Background: There are special software for the visually impaired people. They re
 
 [x] What is css?
 [x] Type of CSS - Inline, Internal, External
-[ ] css selectors ( class vs id )
-[ ] display property: inline, block
+[x] css selectors ( class vs id vs tag )
+[x] display property: inline, block
 [ ] Intro to pseudo-classes(link,visited,hover,active)
 
 What is CSS?
