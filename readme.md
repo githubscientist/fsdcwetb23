@@ -201,3 +201,15 @@ Background: There are special software for the visually impaired people. They re
 - thead
 - tbody
 - tfoot
+
+[x] What is css?
+[x] Type of CSS - Inline, Internal, External
+[ ] css selectors ( class vs id )
+[ ] display property: inline, block
+[ ] Intro to pseudo-classes(link,visited,hover,active)
+
+What is CSS?
+
+- Cascading Style Sheets
+- It is used to style the HTML document.
+- It is used to define the layout of the HTML document.
