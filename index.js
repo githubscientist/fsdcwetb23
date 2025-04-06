@@ -1076,3 +1076,26 @@ DataTypes: type of data we store in a variable
 // var sayHello = function () {
 //     console.log("Hello!");
 // }
+
+let person = {
+    name: "krish",
+    age: 30,
+    course: "fsd",
+}
+
+// key = name, key = age, key = course
+// 3 times loop execution = 3 key-vaue pairs
+// for (let key in bio) {
+//     console.log(key, bio[key]);
+// }
+
+// Object.entries(person).forEach(entry)
+// {
+//     console.log(entry, person(entry));
+// }
+
+Object
+    .entries(person) // [ [ 'name', 'krish' ], [ 'age', 30 ], [ 'course', 'fsd' ] ]
+    .forEach((entry) => {
+        console.log(entry[0], entry[1]);
+    })

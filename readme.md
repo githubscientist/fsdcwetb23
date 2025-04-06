@@ -178,7 +178,26 @@ This is the ordered list tag. It is used to define a list of items. The items ar
 
 [x] What is HTML & Why to use?
 [x] Basic Tags
-[ ] div Vs span
+[x] div Vs span
 [x] Semantic Tags
-[ ] forms
-[ ] Tables
+[x] forms
+[x] Tables
+![alt text](image.png)
+
+### Semantic Tags
+
+Semantic tags are the tags that have a meaning. They are used to define the structure of the document.
+
+Background: There are special software for the visually impaired people. They read the document and tell the user what is in the document. They use semantic tags to understand the structure of the document.
+
+- header
+- footer
+- nav
+- article
+- aside
+- section
+- main
+- figure
+- thead
+- tbody
+- tfoot
