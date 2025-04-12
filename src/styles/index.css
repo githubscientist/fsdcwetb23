@@ -1,84 +1,58 @@
-/* * {
-    font-family: 'Courier New', Courier, monospace;
-} */
-
-/* selectors */
-/* id selector */
-.cHeading {
-    color: green;
-    font-size: 24px;
-}
-
-.bold {
-    font-weight: bold;
-}
-
-.italic {
-    font-style: italic;
-}
-
-.green {
-    color: green;
-}
-
-.blue {
-    color: blue;
-}
-
-.yellow {
-    color: yellow;
-}
-
-a:link {
-    color: blue;
-}
-
-a:visited {
-    color: green;
-}
-
-a:hover {
-    color: red;
-}
-
-a:active {
-    color: purple;
-}
-
-#newsID {
-    color: blue;
-}
-
-.newsClass {
-    color: green;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
 h1 {
-    color: red;
+    /* 
+        width of the content: width of the page 682px
+        height of the content: height of the element 37px
+    */
+    /* padding: 10px 20px 30px 40px; */
+    /* padding: 10px 20px 30px; */
+    /* padding: 10px 20px; */
+    /* padding: 20px; */
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    /* 
+
+        padding: top left right bottom
+        padding: top left/right bottom
+        padding: top/bottom left/right
+
+    */
+
+    /*
+        after padding:
+        
+        padding left + padding right = 20 + 20 = 40px
+
+        width: 642px
+    */
+
+    /* border: 5px solid green;
+     */
+
+    border-left: 4px solid green;
+    /* border-right: 5px solid green; */
+
+    /*
+        after border:
+        
+        border left + border right = 5 + 5 = 10px
+
+        width: 632px
+    */
+
+    margin: 10px 20px 30px 40px;
+
+    /*
+        after margin:
+        
+        margin left + margin right = 20 + 20 = 40px
+
+        width: 592px
+    */
 }
-
-#newsID {
-    color: purple;
-}
-
-/*
-    Precedence of CSS rules:
-
-    1. !important has the highest precedence despite the order of the rules.
-    2. Last rule in the CSS file will override the previous rules if they have the same specificity.
-    3. Specificity: Inline styles > IDs > Classes > Elements.
-    4. Universal selector (*) is used to select all elements and generally used for resetting styles or branding.
-
-    Order of precedence:
-    
-    1. Inline
-    2. Internal
-    3. External
-
-    1. Inline styles
-    2. ID selectors
-    3. Class selectors
-    4. Element selectors
-    5. Universal selector
-    6. Pseudo-classes
-*/

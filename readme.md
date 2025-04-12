@@ -224,11 +224,31 @@ Pseudo-classes are used to define the special state of an element.
 - :active: It is used to define the state of an element when it is being clicked.
 
 [x] what is box model?
-[ ] Padding,margin
-[ ] Vizualize boxmodel in realtime using chrome tools.
-[ ] CSS Position Properties.
+[x] Padding,margin
+[x] Vizualize boxmodel in realtime using chrome tools.
+[x] CSS Position Properties.
 [ ] Colors - solid & linear gradients
 
 ### What is Box Model?
 
 The box model is a box that wraps around every HTML element. It consists of:
+
+- Content: The actual content of the box, where text and images appear.
+- Padding: Clears an area around the content. It is inside the border.
+- Border: A border that goes around the padding and content.
+- Margin: Clears an area outside the border. It is like the outermost layer of the box.
+- The box model is used to calculate the width and height of an element.
+
+### utf-8 in the meta tag
+
+- It is used to define the character set of the HTML document.
+- It is used to define the encoding of the HTML document.
+
+
+### CSS Position Properties
+
+- static: The default position. The element is positioned according to the normal flow of the document.
+- relative: The element is positioned relative to its normal position. We can use top, bottom, left, and right to move the element.
+- absolute: The element is positioned relative to its nearest positioned ancestor. We can use top, bottom, left, and right to move the element.
+- fixed: The element is positioned relative to the viewport. It will not move when the page is scrolled.
+- sticky: The element is positioned based on the user's scroll position. It will switch between relative and fixed, depending on the scroll position.
