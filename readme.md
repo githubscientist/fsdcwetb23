@@ -206,10 +206,29 @@ Background: There are special software for the visually impaired people. They re
 [x] Type of CSS - Inline, Internal, External
 [x] css selectors ( class vs id vs tag )
 [x] display property: inline, block
-[ ] Intro to pseudo-classes(link,visited,hover,active)
+[x] Intro to pseudo-classes(link,visited,hover,active)
 
 What is CSS?
 
 - Cascading Style Sheets
 - It is used to style the HTML document.
 - It is used to define the layout of the HTML document.
+
+### Intro to pseudo-classes
+
+Pseudo-classes are used to define the special state of an element.
+
+- :link: It is used to define the state of a link that has not been visited.
+- :visited: It is used to define the state of a link that has been visited.
+- :hover: It is used to define the state of an element when the mouse is over it.
+- :active: It is used to define the state of an element when it is being clicked.
+
+[x] what is box model?
+[ ] Padding,margin
+[ ] Vizualize boxmodel in realtime using chrome tools.
+[ ] CSS Position Properties.
+[ ] Colors - solid & linear gradients
+
+### What is Box Model?
+
+The box model is a box that wraps around every HTML element. It consists of:

@@ -1,3 +1,7 @@
+/* * {
+    font-family: 'Courier New', Courier, monospace;
+} */
+
 /* selectors */
 /* id selector */
 .cHeading {
@@ -24,3 +28,57 @@
 .yellow {
     color: yellow;
 }
+
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: red;
+}
+
+a:active {
+    color: purple;
+}
+
+#newsID {
+    color: blue;
+}
+
+.newsClass {
+    color: green;
+}
+
+h1 {
+    color: red;
+}
+
+#newsID {
+    color: purple;
+}
+
+/*
+    Precedence of CSS rules:
+
+    1. !important has the highest precedence despite the order of the rules.
+    2. Last rule in the CSS file will override the previous rules if they have the same specificity.
+    3. Specificity: Inline styles > IDs > Classes > Elements.
+    4. Universal selector (*) is used to select all elements and generally used for resetting styles or branding.
+
+    Order of precedence:
+    
+    1. Inline
+    2. Internal
+    3. External
+
+    1. Inline styles
+    2. ID selectors
+    3. Class selectors
+    4. Element selectors
+    5. Universal selector
+    6. Pseudo-classes
+*/
