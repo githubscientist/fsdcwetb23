@@ -259,3 +259,9 @@ The box model is a box that wraps around every HTML element. It consists of:
 - tag
 - universal
 - pseudo-class
+- multiple selectors (eg., .class1, .class2)
+- child selector (eg., parent > child)
+- descendant selector (eg., parent child)
+- adjacent sibling selector (eg., child + child)
+- general sibling selector (eg., child ~ child)
+- attribute selector (eg., [attribute=value])

@@ -1,4 +1,4 @@
-.nav li a {
+.nav>li>a {
     text-decoration: none;
     color: black;
 }
@@ -46,4 +46,33 @@
 .about {
     order: 3;
     flex-grow: 1;
+}
+
+.home, .blog, li {
+    background-color: lightblue;
+}
+/* selector: descendant */
+/* .header h2 {
+    color: red;
+} */
+
+/* selector: child */
+.header > h2 {
+    color: red;
+}
+
+.header > ul > li {
+    background-color: lightcoral;
+}
+
+/* ul + .subheader {
+    color: blue;
+} */
+
+h2 ~ .subheader {
+    color: blue;
+}
+
+a[href="www.google.com"] {
+    color: red;
 }
