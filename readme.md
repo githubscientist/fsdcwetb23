@@ -244,11 +244,10 @@ The box model is a box that wraps around every HTML element. It consists of:
 - It is used to define the character set of the HTML document.
 - It is used to define the encoding of the HTML document.
 
-
 ### CSS Position Properties
 
 - static: The default position. The element is positioned according to the normal flow of the document.
 - relative: The element is positioned relative to its normal position. We can use top, bottom, left, and right to move the element.
-- absolute: The element is positioned relative to its nearest positioned ancestor. We can use top, bottom, left, and right to move the element.
-- fixed: The element is positioned relative to the viewport. It will not move when the page is scrolled.
+- absolute: The element is positioned relative to its nearest positioned ancestor. We can use top, bottom, left, and right to move the element. It will be removed from the normal flow of the document.
+- fixed: The element is positioned relative to the viewport. It will not move when the page is scrolled. It will be removed from the normal flow of the document.
 - sticky: The element is positioned based on the user's scroll position. It will switch between relative and fixed, depending on the scroll position.

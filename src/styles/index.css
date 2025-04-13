@@ -2,9 +2,8 @@
     border: 3px solid green;
     height: 200px;
     width: 200px;
-    position: absolute;
-    top: 200px;
-    left: 300px;
+    position: relative;
+    top: 100px;
 }
 
 .box2 {
@@ -19,7 +18,15 @@
     border: 3px solid blue;
     height: 200px;
     width: 200px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
+
+.box4 {
     position: relative;
+    border: 3px solid purple;
+    height: 200px;
     top: 100px;
     left: 100px;
 }
