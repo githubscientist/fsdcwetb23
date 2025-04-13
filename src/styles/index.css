@@ -1,5 +1,4 @@
-h1 {
-    position: fixed;
-    top: 30px;
-    right: 50px;
+h2 {
+    position: sticky;
+    top: 0; /* Adjust this value to set the distance from the top of the viewport and for the sticky effect */
 }
