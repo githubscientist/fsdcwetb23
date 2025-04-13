@@ -2,8 +2,9 @@
     border: 3px solid green;
     height: 200px;
     width: 200px;
-    position: relative;
-    top: 100px;
+    position: absolute;
+    top: 200px;
+    left: 300px;
 }
 
 .box2 {
