@@ -227,7 +227,7 @@ Pseudo-classes are used to define the special state of an element.
 [x] Padding,margin
 [x] Vizualize boxmodel in realtime using chrome tools.
 [x] CSS Position Properties.
-[ ] Colors - solid & linear gradients
+[x] Colors - solid & linear gradients
 
 ### What is Box Model?
 
