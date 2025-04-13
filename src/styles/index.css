@@ -1,4 +1,24 @@
-h2 {
-    position: sticky;
-    top: 0; /* Adjust this value to set the distance from the top of the viewport and for the sticky effect */
+.box1 {
+    border: 3px solid green;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 100px;
+}
+
+.box2 {
+    border: 3px solid red;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 100px;
+}
+
+.box3 {
+    border: 3px solid blue;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    top: 100px;
+    left: 100px;
 }
