@@ -251,3 +251,11 @@ The box model is a box that wraps around every HTML element. It consists of:
 - absolute: The element is positioned relative to its nearest positioned ancestor. We can use top, bottom, left, and right to move the element. It will be removed from the normal flow of the document.
 - fixed: The element is positioned relative to the viewport. It will not move when the page is scrolled. It will be removed from the normal flow of the document.
 - sticky: The element is positioned based on the user's scroll position. It will switch between relative and fixed, depending on the scroll position.
+
+### CSS Selectors
+
+- class
+- id
+- tag
+- universal
+- pseudo-class

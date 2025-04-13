@@ -1,5 +1,49 @@
-.box {
+.nav li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav li {
+    list-style: none;
     border: 1px solid black;
-    height: 300px;
-    background: linear-gradient(to right, green);
+    padding: 10px;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+}
+
+.nav li:hover {
+    background-color: darkgray;
+    cursor: pointer;
+}
+
+.nav {
+    display: flex;
+    /* flex-direction: column; */
+    flex-direction: row;
+    gap: 5px;
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    justify-content: center;
+    /* justify-content: space-between; */
+}
+
+.home {
+    order: 1;
+    flex-grow: 1;
+}
+
+.blog {
+    order: 2;
+    flex-grow: 1;
+}
+
+.contact {
+    order: 4;
+    flex-grow: 1;
+}
+
+.about {
+    order: 3;
+    flex-grow: 1;
 }
