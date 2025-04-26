@@ -2,7 +2,6 @@
     Upto 991px
     This is the default styling for mobile devices.
 */
-
 .menu li a {
     text-decoration: none;
     color: #000;
@@ -36,12 +35,18 @@
     align-items: center;
 }
 
-.menu {
-    display: none;
+@media (max-width: 991px){
+    .menu {
+        display: none;
+    }
+
+    #menu-icon {
+        display: block;
+    }
 }
 
 /* Styles for iPads or Desktop Devices */
-@media (min-width: 992px){
+@media (min-width: 992px) and (max-width: 1200px){
     .menu {
         display: flex;
         justify-content: right;
@@ -51,4 +56,8 @@
     #menu-icon {
         display: none;
     }
+}
+
+@media (min-width: 1201px) and (orientation: landscape){
+
 }
