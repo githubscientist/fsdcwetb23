@@ -265,3 +265,8 @@ The box model is a box that wraps around every HTML element. It consists of:
 - adjacent sibling selector (eg., child + child)
 - general sibling selector (eg., child ~ child)
 - attribute selector (eg., [attribute=value])
+
+### Responsive Web Design
+
+- It is a design approach that makes web pages render well on a variety of devices and window or screen sizes.
+- It uses fluid grids, flexible images, and media queries.

@@ -1,34 +1,54 @@
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    /* grid-template-columns: repeat(2, 1fr); */
-    /* grid-template-columns: 15% 85%; */
-    /* grid-template-columns: 100px 900px; */
+/*  
+    Upto 991px
+    This is the default styling for mobile devices.
+*/
+
+.menu li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.2rem;
+    padding: 10px;
+    display: block;
 }
 
-.box {
-    border: 3px solid green;
-    padding: 20px;
-    margin: 1px;
+.menu li {
+    list-style: none;
+    /* border: 1px solid #000; */
+}
+
+.menu li:hover {
+    background-color: #f0f0f0;
+}
+
+.menu {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+#menu-icon {
+    font-size: 48px;
 }
 
 .header {
-    grid-column: 1 / 5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.sidebar {
-    grid-column: 1 / 2;
-    grid-row: 2 / 4;
+.menu {
+    display: none;
 }
 
-.maincontent {
-    grid-column: 2 / 5;
-}
+/* Styles for iPads or Desktop Devices */
+@media (min-width: 992px){
+    .menu {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
 
-.footer {
-    grid-column: 1 / 5;
-}
-
-.article {
-    grid-column: 2 / 4;
+    #menu-icon {
+        display: none;
+    }
 }
