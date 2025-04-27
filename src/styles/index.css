@@ -1,63 +1,123 @@
-/*  
-    Upto 991px
-    This is the default styling for mobile devices.
-*/
-.menu li a {
-    text-decoration: none;
-    color: #000;
-    font-size: 1.2rem;
-    padding: 10px;
-    display: block;
+* {
+    font-family: DM Sans, system-ui, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.menu li {
+.nav-list {
     list-style: none;
-    /* border: 1px solid #000; */
 }
 
-.menu li:hover {
-    background-color: #f0f0f0;
+.nav-list li a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0.5rem;
 }
 
-.menu {
+.nav-list {
     display: flex;
-    justify-content: right;
-    align-items: center;
-}
-
-#menu-icon {
-    font-size: 48px;
+    gap: 1rem;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    padding: 0.5rem;
 }
 
-@media (max-width: 991px){
-    .menu {
-        display: none;
-    }
 
-    #menu-icon {
-        display: block;
-    }
+.hero {
+    height: 1024px;
+    width: 100%;
 }
 
-/* Styles for iPads or Desktop Devices */
-@media (min-width: 992px) and (max-width: 1200px){
-    .menu {
-        display: flex;
-        justify-content: right;
-        align-items: center;
-    }
-
-    #menu-icon {
-        display: none;
-    }
+.hero {
+    display: flex;
+    gap: 0.5rem;
+    background: url('../../src/assets/BlUVBPJW-hero-bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
 }
 
-@media (min-width: 1201px) and (orientation: landscape){
+.hero-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 
+.hero-form form input, .hero-form form select, .hero-form form button {
+    padding: 1rem;
+    border-radius: 0.3rem;
+    border: 1px solid #ccc;
+}
+
+.consent {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #a09999c5;
+}
+
+.hero-description {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-description {
+    padding: 3.5rem;
+    margin: 5rem;
+}
+
+.hero-form {
+    padding: 3.5rem;
+    margin: 5rem;
+    border: 1px solid white;
+    background: white;
+}
+
+.hero-form h2 {
+    color: black;
+    text-align: center;
+}
+
+.hero-description h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-description p:last-child {
+    background-color: #2A4439;
+    padding: 0.5rem;
+    display: inline-block;
+    margin: 0;
+    border-radius: 0.5rem;
+    width: 75%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    z-index: 1000;
+}
+
+label {
+    font-size: 0.75rem;
+    color: black;
+}
+
+.hero-form input[type="submit"]  {
+    background-color: #0EBA4B;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.hero-form {
+    width: 100%;
 }
