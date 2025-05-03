@@ -1,15 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>TailwindCSS Setup</title>
-        <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    </head>
-    <body>
-        <div class="rounded-full w-32 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&h=1000&q=80" alt="" class="w-full h-full object-cover">
-        </div>
-    </body>
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+            --color-clifford: #da373d;
+            --color-mycolor: #3b82f6;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-3xl font-bold underline text-mycolor">
+        Hello world!
+    </h1>
+</body>
+
 </html>
