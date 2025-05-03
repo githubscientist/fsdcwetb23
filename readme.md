@@ -270,3 +270,31 @@ The box model is a box that wraps around every HTML element. It consists of:
 
 - It is a design approach that makes web pages render well on a variety of devices and window or screen sizes.
 - It uses fluid grids, flexible images, and media queries.
+
+### Day - 11
+
+[x] Tailwind CSS - Setup
+[x] Colors
+[x] Typography
+[x] Spaces and Sizes
+[ ] Borders
+[ ] Images
+[ ] Customization
+
+#### Library Vs Framework
+
+- Library: A collection of functions and methods that can be used to perform specific tasks. It is a set of pre-written code that can be used to perform common tasks.
+
+- Framework: A framework is a collection of libraries that are used to build a specific type of application. It is a set of rules and guidelines that are used to build an application.
+
+#### Tailwind CSS
+
+- It is a utility-first CSS framework for creating custom designs.
+- It is a low-level CSS framework that provides utility classes to build custom designs.
+- It is a mobile-first CSS framework that is designed to be responsive.
+- It is a CSS framework that is designed to be customizable.
+
+#### CDN
+
+- Content Delivery Network
+- It is a network of servers that are used to deliver content to users based on their geographic location.

@@ -1,46 +1,19 @@
-* {
-    font-size: 16px;
+.text-1xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
-/* div {
-    border: 1px solid black;
-    padding: 10px;
-} */
-
-.logo {
-    grid-column: 1 / 4;
+.text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
 }
 
-.nav {
-    grid-column: 4 / 10;
-}
-
-.auth {
-    grid-column: 10 / 13;
-}
-
-.hero-description {
-    grid-column: 1 / 7;
-}
-
-.hero-image {
-    grid-column: 7 / 13;
-    text-align: center;
-}
-
-.hero-description h1 {
-    font-size: 4em;
-}
-
-.hero-description p {
-    font-size: 1.5em;
-}
-
-.hero-description button {
-    font-size: 1.2em;
+.text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
 }
