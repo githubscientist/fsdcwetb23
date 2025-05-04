@@ -277,9 +277,9 @@ The box model is a box that wraps around every HTML element. It consists of:
 [x] Colors
 [x] Typography
 [x] Spaces and Sizes
-[ ] Borders
-[ ] Images
-[ ] Customization
+[x] Borders
+[x] Images
+[x] Customization
 
 #### Library Vs Framework
 
@@ -298,3 +298,8 @@ The box model is a box that wraps around every HTML element. It consists of:
 
 - Content Delivery Network
 - It is a network of servers that are used to deliver content to users based on their geographic location.
+
+### Day - 12
+
+[ ] flex & grid box
+[ ] layout & rwd

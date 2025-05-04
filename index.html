@@ -3,37 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- font playwrite romania -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+RO:wght@100..400&display=swap" rel="stylesheet">
-
-    <!-- font indie flower -->
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
-
+    <title>Tailwind - Flex</title>
     <!-- tailwindcss cdn -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- custom styles for tailwindcss -->
-    <style type="text/tailwindcss">
-        @theme {
-            --color-primary: #1e3a8a;
-            --color-secondary: #fbbf24;
-            --color-accent: #f472b6;
-
-            --font-playwrite-ro: 'Playwrite RO', sans-serif;
-        }
-
-        @layer base {
-            .font-indie-flower {
-                font-family: 'Indie Flower', cursive;
-            }
-        }
-    </style>
 </head>
-    <body class="p-4 m-4">
-        <h1 class="text-accent text-4xl font-playwrite-ro pb-4">Hello World!</h1>
-        <h2 class="text-3xl font-indie-flower text-secondary">Welcome</h2>
+    <body>
+        <div class="flex flex-row flex-wrap justify-end items-center ">
+            <div class="border border-3 bg-orange-500 p-4 m-2 text-white text-center order-4">Item 1</div>
+            <div class="border border-3 bg-green-500 p-4 m-2 text-white text-center order-5">Item 2</div>
+            <div class="border border-3 bg-blue-500 p-4 m-2 text-white text-center order-3">Item 3</div>
+            <div class="border border-3 bg-red-500 p-4 m-2 text-white text-center order-2">Item 4</div>
+            <div class="border border-3 bg-purple-500 p-4 m-2 text-white text-center order-1">Item 5</div>
+        </div>
     </body>
 </html>
