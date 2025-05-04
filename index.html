@@ -8,20 +8,13 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
     <body>
-        <div class="grid grid-cols-12 gap-1 m-2">
-            <div class="border border-3 p-4 text-center col-span-12">NavBar</div>
-            <div class="border border-3 p-4 text-center col-span-12">Hero Header</div>
-            <div class="border border-3 p-4 text-center col-span-2">Left Sidebar</div>
-            
-            <div class="border border-3 p-4 text-center col-start-3 col-end-11 grid grid-cols-12">
-                Main
-                <div class="border border-3 p-4 text-center col-span-12">Topic</div>
-                <div class="border border-3 p-4 text-center col-span-6">Content</div>
-                <div class="border border-3 p-4 text-center col-span-6">Tasks</div>
-            </div>
-
-            <div class="border border-3 p-4 text-center col-span-2">Right Sidebar</div>
-            <div class="border border-3 p-4 text-center col-span-12">Footer</div>
+        <div class="border border-3 m-2 md:grid md:grid-cols-12">
+            <div class="border border-3 m-1 p-4 text-center md:col-span-12">Header</div>
+            <div class="border border-3 m-1 p-4 text-center md:row-span-3 md:col-span-6">Image</div>
+            <div class="border border-3 m-1 p-4 text-center md:col-span-6">Description</div>
+            <div class="border border-3 m-1 p-4 text-center md:col-span-6 lg:col-span-3">Feature A</div>
+            <div class="border border-3 m-1 p-4 text-center md:col-span-6 lg:col-span-3">Feature B</div>
+            <div class="border border-3 m-1 p-4 text-center col-span-12">Footer</div>
         </div>
     </body>
 </html>
