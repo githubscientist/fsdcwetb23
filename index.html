@@ -8,12 +8,20 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
     <body>
-        <div class="flex flex-row flex-wrap justify-around">
-            <div class="border border-3 bg-orange-500 p-4 text-white text-center order-4 basis-1/4">Item 1</div>
-            <div class="border border-3 bg-green-500 p-4 text-white text-center order-5 basis-1/4">Item 2</div>
-            <div class="border border-3 bg-blue-500 p-4 text-white text-center order-3 basis-1/4">Item 3</div>
-            <div class="border border-3 bg-red-500 p-4 text-white text-center order-2 basis-1/4">Item 4</div>
-            <div class="border border-3 bg-purple-500 p-4 text-white text-center order-1 basis-1/4">Item 5</div>
+        <div class="grid grid-cols-12 gap-1 m-2">
+            <div class="border border-3 p-4 text-center col-span-12">NavBar</div>
+            <div class="border border-3 p-4 text-center col-span-12">Hero Header</div>
+            <div class="border border-3 p-4 text-center col-span-2">Left Sidebar</div>
+            
+            <div class="border border-3 p-4 text-center col-start-3 col-end-11 grid grid-cols-12">
+                Main
+                <div class="border border-3 p-4 text-center col-span-12">Topic</div>
+                <div class="border border-3 p-4 text-center col-span-6">Content</div>
+                <div class="border border-3 p-4 text-center col-span-6">Tasks</div>
+            </div>
+
+            <div class="border border-3 p-4 text-center col-span-2">Right Sidebar</div>
+            <div class="border border-3 p-4 text-center col-span-12">Footer</div>
         </div>
     </body>
 </html>
