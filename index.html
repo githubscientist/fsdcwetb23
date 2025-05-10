@@ -35,7 +35,16 @@
                 --color-error: #E53835;
                 --color-success: #2E7D31;
 
+                --color-neutral-black: #263238;
+                --color-neutral-dark-grey: #4D4D4D;
+                --color-neutral-grey: #717171;
+                --color-neutral-light-grey: #89939E;
+                --color-neutral-grey-blue: #ABBED1;
+                --color-neutral-silver: #F5F7FA;
+                --color-neutral-white: #FFFFFF;
+
                 --font-primary: 'Inter', sans-serif;
+
 
             }
 
@@ -48,6 +57,17 @@
                 .btn-primary {
                     @apply bg-primary inline-flex items-center justify-center;
                 }
+
+                /* typography */
+                .text-h1 { @apply text-[64px] leading-[76px] font-semibold; }
+                .text-h2 { @apply text-[36px] leading-[44px] font-semibold; }
+                .text-h3 { @apply text-[28px] leading-[36px] font-semibold; }
+                .text-h4 { @apply text-[20px] leading-[28px] font-semibold; }
+                
+                .text-body1 { @apply text-[18px] leading-[28px]; }
+                .text-body2 { @apply text-[16px] leading-[24px]; }
+                .text-body3 { @apply text-[14px] leading-[20px]; }
+                .text-body4 { @apply text-[12px] leading-[16px]; }
             }
          </style>
     </head>
@@ -68,5 +88,23 @@
                 
                 <a class="btn btn-primary">Register Now -></a></div>
         </header>
+
+        <section class="flex flex-row items-center px-8 py-16 bg-neutral-silver relative">
+            <div class="w-1/2 space-y-6">
+                <h1 class="text-h1 text-secondary">Lessons and insights <br><span class="text-primary">from 8 years</span></h1>
+                <p class="text-body1 text-neutral-grey">Where to grow your business as a photographer: site or social media?</p>
+                <a href="#" class="btn btn-primary">Register</a>
+            </div>
+
+            <div class="mt-0 w-1/2">
+                <img src="./src/assets/Illustration.png" alt="hero image" class="w-full max-w-md mx-auto">
+            </div>
+
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 mt-8">
+                <span class="w-3 h-3 bg-primary rounded-full"></span>
+                <span class="w-3 h-3 bg-tint-3 rounded-full"></span>
+                <span class="w-3 h-3 bg-tint-3 rounded-full"></span>
+            </div>
+        </section>
    </body>
 </html>
