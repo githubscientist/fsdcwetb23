@@ -1,20 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind - Flex</title>
-    <!-- tailwindcss cdn -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-    <body>
-        <div class="border border-3 m-2 md:grid md:grid-cols-12">
-            <div class="border border-3 m-1 p-4 text-center md:col-span-12">Header</div>
-            <div class="border border-3 m-1 p-4 text-center md:row-span-3 md:col-span-6">Image</div>
-            <div class="border border-3 m-1 p-4 text-center md:col-span-6">Description</div>
-            <div class="border border-3 m-1 p-4 text-center md:col-span-6 lg:col-span-3">Feature A</div>
-            <div class="border border-3 m-1 p-4 text-center md:col-span-6 lg:col-span-3">Feature B</div>
-            <div class="border border-3 m-1 p-4 text-center col-span-12">Footer</div>
-        </div>
-    </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tailwind - Flex</title>
+        <!-- tailwindcss cdn -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <!-- Inter Font Family CDN -- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <!-- Tailwind CSS Custom Styles -->
+         <style type="text/tailwindcss">
+            @theme {
+                --color-primary: #4CAF4F;
+                --color-secondary: #263238;
+                --color-info: #2194F3;
+
+                --color-shade-1: #43A046;
+                --color-shade-2: #388E3B;
+                --color-shade-3: #237D31;
+                --color-shade-4: #1B5E1F;
+                --color-shade-5: #103E13;
+
+                --color-tint-1: #66BB69;
+                --color-tint-2: #81C784;
+                --color-tint-3: #A5D6A7;
+                --color-tint-4: #C8E6C9;
+                --color-tint-5: #E8F5E9;
+
+                --color-warning: #FBC02D;
+                --color-error: #E53835;
+                --color-success: #2E7D31;
+
+                --font-primary: 'Inter', sans-serif;
+
+            }
+
+            @layer base {
+                /* buttons */
+                .btn {
+                    @apply px-[22.27px] py-[9.74px] rounded text-white font-primary;
+                }
+
+                .btn-primary {
+                    @apply bg-primary inline-flex items-center justify-center;
+                }
+            }
+         </style>
+    </head>
+   <body>
+        <a class="btn btn-primary">Register Now -></a>
+   </body>
 </html>
