@@ -301,5 +301,33 @@ The box model is a box that wraps around every HTML element. It consists of:
 
 ### Day - 12
 
-[ ] flex & grid box
-[ ] layout & rwd
+[x] flex & grid box
+[x] layout & rwd
+
+### Day - 13
+
+[x] Create Landing Page using Html&Tailwindcss -Part 1
+
+### Day - 14
+
+[x] Create Landing Page using Html&Tailwindcss -Part 2
+
+## Module 4 - Advanced JavaScript
+
+### Day - 15
+
+[x] What's the DOM and DOM Manipulation
+[ ] Selecting and Manipulating Elements
+[ ] get element by Class, tagname & ID
+[ ] document.queryselector & document.queryselectorAll
+[ ] Append & Appendchild
+
+#### What is the DOM?
+
+- Document Object Model
+  - Document: The HTML document
+  - Object: The objects in the HTML document or the elements in the HTML document.
+  - Model: The HTML document is represented as a tree structure.
+- The DOM is a programming interface for web documents.
+- It represents the document as a tree of nodes.
+- It allows JavaScript to manipulate the document structure, style, and content.
