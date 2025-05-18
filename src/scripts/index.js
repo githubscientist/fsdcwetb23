@@ -1,19 +1,25 @@
-// console.log(document.getElementsByTagName('p')[2]);
+// let heading = document.createElement('h1');
 
-// console.log(document.getElementsByClassName('italics'));
+// heading.textContent = 'Document Object Model - API';
 
-// console.log(document.getElementById('dom'));
+// heading.setAttribute('class', 'italics');
+// // heading.setAttribute('class', 'heading italics');
+// // heading.classList.add('italics');
+// // heading.classList.add('red');
 
-// console.log(document.getElementById('welcome'));
+// heading.setAttribute('style', 'color: green; font-family: Arial');
+// heading.style.color = 'red';
+// heading.classList.add('blue');
 
-// let welcomeText = document.getElementById('welcome');
+// heading.setAttribute('id', 'headingID');
 
-// welcomeText.textContent = 'This page will help you understand how to manipulate the Document Object Model using JavaScript.';
+// let subHeading = document.createElement('h2');
 
-let paraItalics = document.getElementsByClassName('italics');
-let wordLengthElements = document.getElementsByClassName('wordLength');
+// subHeading.textContent = 'Definition';
 
-for (let index = 0; index < paraItalics.length; index++) {
-    // console.log(paraItalics[index].textContent.split(' ').length);
-    wordLengthElements[index].textContent = `Words: ${paraItalics[index].textContent.split(' ').length}`;
-}
+// // document.querySelector('.container').appendChild(header);
+// // document.querySelector('.container').appendChild(subHeading);
+
+// document.querySelector('.container').append(heading, subHeading);
+
+// console.log(document.querySelectorAll('body')[0].childNodes[1].children);
