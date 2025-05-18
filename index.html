@@ -3,27 +3,76 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document Object Model - API</title>
+        <title>DOM API</title>
         <link rel="stylesheet" href="./src/styles/index.css">
     </head>
     <body>
         <div class="container">
-            <header>
-                <h1>Document Object Model - API</h1>
-            </header>
-            <main>
-                <section id="api-section">
-                    <h2>API Section</h2>
-                    <p>This section will contain the API documentation.</p>
-                </section>
-                <section id="examples-section">
-                    <h2>Examples Section</h2>
-                    <p>This section will contain examples of how to use the API.</p>
-                </section>
-            </main>
-            <footer>
-                <p>&copy; 2023 Document Object Model - API</p>
-            </footer>
+            <div class="table">
+                <table border="1" style="border-collapse: collapse; " cellpadding="10" width="100%">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Year</th>
+                            <th>ISBN</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list">
+                        <tr>
+                            <td>Book Title</td>
+                            <td>Author Name</td>
+                            <td>2023</td>
+                            <td>1234567890</td>
+                            <td>
+                                <button class="delete">Delete</button>
+                                <button class="edit">Edit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Another Book</td>
+                            <td>Another Author</td>
+                            <td>2022</td>
+                            <td>0987654321</td>
+                            <td>
+                                <button class="delete">Delete</button>
+                                <button class="edit">Edit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Sample Book</td>
+                            <td>Sample Author</td>
+                            <td>2021</td>
+                            <td>1122334455</td>
+                            <td>
+                                <button class="delete">Delete</button>
+                                <button class="edit">Edit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Test Book</td>
+                            <td>Test Author</td>
+                            <td>2020</td>
+                            <td>5566778899</td>
+                            <td>
+                                <button class="delete">Delete</button>
+                                <button class="edit">Edit</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Example Book</td>
+                            <td>Example Author</td>
+                            <td>2019</td>
+                            <td>1231231234</td>
+                            <td>
+                                <button class="delete">Delete</button>
+                                <button class="edit">Edit</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
         <script src="./src/scripts/index.js"></script>
     </body>
