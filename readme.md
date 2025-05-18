@@ -331,3 +331,4 @@ The box model is a box that wraps around every HTML element. It consists of:
 - The DOM is a programming interface for web documents.
 - It represents the document as a tree of nodes.
 - It allows JavaScript to manipulate the document structure, style, and content.
+
