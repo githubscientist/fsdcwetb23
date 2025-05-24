@@ -1,32 +1,19 @@
-// chooses a random number index
-// use that to select randomly one of the choices rock, paper, scissor
-function generateComputerChoice() {
-    let choices = ['Rock', 'Paper', 'Scissor'];
+let board = document.querySelector('.board');
 
-    let randomNumber = Math.floor(Math.random() * 3);
-
-    return choices[randomNumber];
-}
-
-function getWinner(playerChoice, computerChoice) {
-    if (playerChoice === computerChoice) return 'Tie';
-    else if ((playerChoice == 'Rock' && computerChoice == 'Scissor') || (playerChoice == 'Scissor' && computerChoice == 'Paper') || (playerChoice == 'Paper' && computerChoice == 'Rock')) {
-        return 'You Win!';
-    } else {
-        return 'Computer Wins!';
+for (let i = 0; i < board.children.length; i++) {
+    if (i == 0 || i == 1 || i == 2) {
+        board.children[i].style.borderTop = 'none';
     }
-}
 
-function play(playerChoice) {
-    let pChoice = document.getElementById('pChoice');
-    pChoice.textContent = playerChoice;
+    if (i == 0 || i == 3 || i == 6) {
+        board.children[i].style.borderLeft = 'none';
+    }
 
-    let computerChoice = generateComputerChoice();
+    if (i == 6 || i == 7 || i == 8) {
+        board.children[i].style.borderBottom = 'none';
+    }
 
-    let cChoice = document.getElementById('cChoice');
-    cChoice.textContent = computerChoice;
-
-    let winner = getWinner(playerChoice, computerChoice);
-    let result = document.getElementById('result');
-    result.textContent = winner;
+    if (i == 8 || i == 2 || i == 5) {
+        board.children[i].style.borderRight = 'none';
+    }
 }
