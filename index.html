@@ -3,11 +3,24 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DOM API</title>
+        <title>DOM Practice</title>
         <link rel="stylesheet" href="./src/styles/index.css">
     </head>
     <body>
-        <div class="about"><p>Let's talk about innerText first.</p></div>
+        <div class="container">
+            <div class="buttons">
+                <h1>Rock Paper Scissors Game</h1>
+                <button onclick="play('Rock')">Rock</button>
+                <button onclick="play('Paper')">Paper</button>
+                <button onclick="play('Scissor')">Scissor</button>
+            </div>
+
+            <div class="results">
+                <p>You Chose: <span id="pChoice"></span></p>
+                <p>Computer Chose: <span id="cChoice"></span></p>
+                <h2>Result: <span id="result">-----</span></h2>
+            </div>
+        </div>
         <script src="./src/scripts/index.js"></script>
     </body>
 </html>
