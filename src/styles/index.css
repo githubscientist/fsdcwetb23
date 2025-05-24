@@ -18,3 +18,8 @@
     margin: 20px auto;
 }
 
+#messageText {
+    font-size: 2rem;
+    text-align: start;
+    margin-top: 20px;
+}
