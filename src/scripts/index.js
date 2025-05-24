@@ -1,8 +1,6 @@
-const handleClick = () => {
-    console.log('button clicked');
-}
+let about = document.querySelector('.about');
 
-// get the reference of the button 
-const clickmeButton = document.getElementById('clickme');
+// about.innerText = 'Ok'
+// about.textContent = 'Ok';
 
-clickmeButton.addEventListener('click', handleClick);
+about.innerHTML = `<p>Let's talk about innerText first.</p><p>Yes, that's correct!</p><p>Let's move on next to innerHTML!</p>`

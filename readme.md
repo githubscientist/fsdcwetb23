@@ -321,8 +321,7 @@ The box model is a box that wraps around every HTML element. It consists of:
 [x] get element by Class, tagname & ID
 [x] document.queryselector & document.queryselectorAll
 [x] Append & Appendchild
-[ ] innerHTML, innerText
-[ ] Keyboard events
+[x] innerHTML, innerText
 
 #### What is the DOM?
 
@@ -333,3 +332,13 @@ The box model is a box that wraps around every HTML element. It consists of:
 - The DOM is a programming interface for web documents.
 - It represents the document as a tree of nodes.
 - It allows JavaScript to manipulate the document structure, style, and content.
+
+### Day - 16
+
+[ ] DOM Events
+[ ] Mouse Events
+[ ] Keyboard events
+
+### Day - 17
+
+[ ] Build a mini project using Html,Css and JS. Suggestions : Dice Game , Quiz Game etc.
