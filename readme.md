@@ -335,10 +335,39 @@ The box model is a box that wraps around every HTML element. It consists of:
 
 ### Day - 16
 
-[ ] DOM Events
-[ ] Mouse Events
+[x] DOM Events
+[x] Mouse Events
 [ ] Keyboard events
 
 ### Day - 17
 
-[ ] Build a mini project using Html,Css and JS. Suggestions : Dice Game , Quiz Game etc.
+[x] Build a mini project using Html,Css and JS. Suggestions : Dice Game , Quiz Game etc.
+
+### Day - 18
+
+[x] Event Loop
+[x] Callback & Callback Hell
+[x] Promise & Promise Chaining
+[ ] Async await
+
+#### Event Loop
+
+- The event loop is a mechanism that allows JavaScript to perform non-blocking I/O operations (asynchronous operations).
+- It is a single-threaded model that uses an event queue to handle asynchronous operations.
+- The event loop continuously checks the event queue for new events and processes them one by one.
+
+#### Callback
+
+- A callback is a function that is passed as an argument to another function and is executed after the completion of that function.
+- It is used to handle asynchronous operations in JavaScript.
+- It works in a phenomenon called "Give me a callback when you are done".
+- Examples: Array methods like `forEach`, `map`, `filter`, etc. use callbacks.
+
+#### Callback Hell
+
+- Callback hell is a situation where multiple nested callbacks make the code difficult to read and maintain.
+- It occurs when multiple asynchronous operations are dependent on each other and require nested callbacks.
+
+#### Promise
+
+- A promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
