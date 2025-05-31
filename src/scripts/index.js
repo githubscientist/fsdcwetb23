@@ -179,3 +179,40 @@ Finishing all functions!!!
 //             console.log(value);
 //         }
 //     )
+
+// Promise Chaining
+// new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         let randomValue = Math.floor(Math.random() * 10);
+//         if (randomValue > 5) resolve();
+//         else reject();
+//     }, 3000);
+// })
+//     .then(() => {
+//         console.log('success, so resolved!');
+//     })
+//     .then(() => {
+//         console.log('I will execute next!');
+//     })
+//     .catch(() => {
+//         console.log('error, so rejected!');
+//     })
+//     .then(() => {
+//         console.log('I will also execute');
+//     })
+
+// function fetchData() {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve('Data received from the server!');
+//         }, 2000);
+//     })
+// }
+
+// async function getData() {
+//     console.log('fetching data...');
+//     const data = await fetchData();
+//     console.log(data);
+// }
+
+// getData();
