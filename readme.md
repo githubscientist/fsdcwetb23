@@ -371,3 +371,23 @@ The box model is a box that wraps around every HTML element. It consists of:
 #### Promise
 
 - A promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value.
+
+### Day - 19
+
+[x] Error Handling in Js
+[x] Http methods using Fetch
+[x] .then and .catch
+[x] try catch
+[x] Async await
+
+#### XHR
+
+- XML HTTP Request
+- It is a JavaScript API that allows you to make HTTP requests to a server.
+- It is used to send and receive data from a server asynchronously.
+- It is a traditional way of making HTTP requests in JavaScript.
+
+#### Fetch API
+
+- The Fetch API is a modern way to make HTTP requests in JavaScript.
+- It is a promise-based API that provides a more powerful and flexible feature set than the XHR API.
