@@ -1,21 +1,15 @@
-let todosButton = document.querySelector(".todosButton");
+async function fetchNotes() {
+    console.log('Fetching notes...');
 
-async function fetchTodos() {
-    console.log('Fetching Todos...');
     try {
-        const response = await fetch('https://683aa2ef43bb370a86733ba3.mockapi.io/todos');
-        console.log('Fetched Todos...');
+        // call the api
+        const response = await fetch('https://683bdc3428a0b0f2fdc593ef.mockapi.io/notes');
+        const notes = await response.json();
 
-        try {
-            const todos = await response.json();
-
-            console.log(todos);
-        } catch (error) {
-            console.log(error.message);
-        }
+        console.log(notes);
     } catch (error) {
         console.log(error.message);
     }
 }
 
-todosButton.addEventListener('click', fetchTodos);
+fetchNotes();
