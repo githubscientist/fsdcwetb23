@@ -44,6 +44,10 @@ async function populate(notes) {
 
 (async () => {
     notes = await fetchNotes();
+
+    // store the notes in the localStorage
+    localStorage.setItem('notes', JSON.stringify(notes));
+
     await populate(notes);
 
     // create a new button to add a new note

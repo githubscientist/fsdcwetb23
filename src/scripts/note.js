@@ -32,9 +32,16 @@ function populate(note) {
     updatedAt.textContent = `Updated At: ${note.updatedAt}`;
 }
 
+async function getNote(noteID) {
+    let notes = JSON.parse(localStorage.getItem('notes')) || [];
+    let note = notes.find(note => note.id === noteID);
+    return note;
+}
+
 (async () => {
     noteID = await readParams('id');
-    const note = await fetchNote(noteID);
+    // const note = await fetchNote(noteID);
+    const note = await getNote(noteID) || await fetchNote(noteID);
     populate(note);
 })();
 
