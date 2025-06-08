@@ -2,7 +2,6 @@ let notes = [];
 let notesDiv = document.querySelector('.notes');
 
 async function fetchNotes() {
-    console.log('Fetching notes...');
 
     try {
         // call the api
@@ -46,4 +45,18 @@ async function populate(notes) {
 (async () => {
     notes = await fetchNotes();
     await populate(notes);
+
+    // create a new button to add a new note
+    const addNoteButton = document.createElement('button');
+
+    // set the text content of the button
+    addNoteButton.textContent = 'Add Note';
+
+    // attach an event listener to open the add note page
+    addNoteButton.addEventListener('click', () => {
+        // redirect to the add note page
+        window.location.href = '/add-note.html';
+    })
+
+    notesDiv.append(addNoteButton);
 })();

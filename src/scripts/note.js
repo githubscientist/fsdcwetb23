@@ -59,3 +59,8 @@ function deleteNote() {
 
 let deleteButton = document.querySelector('.delete');
 deleteButton.addEventListener('click', deleteNote);
+
+let editButton = document.querySelector('.edit');
+editButton.addEventListener('click', () => {
+    window.location.href = `/edit.html?id=${noteID}`;
+});

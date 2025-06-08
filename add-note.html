@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add New Note</title>
+        <link rel="stylesheet" href="./src/styles/add-note.css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Add New Note</h2>
+            <form class="newNoteForm" onsubmit="createNote(event)">
+                <input 
+                    type="text" 
+                    name="title" 
+                    id="titleInput"
+                    placeholder="Note title..."
+                >
+
+                <textarea 
+                    name="description" 
+                    id="descriptionInput"
+                    placeholder="Note Description..."
+                    rows="5"
+                    cols="40"
+                ></textarea>
+
+                <div>
+                    <label for="important">
+                        <input type="radio" name="importantInput" id="important">
+                        Important
+                    </label>
+                    <label for="notImportant">
+                        <input type="radio" name="importantInput" id="ImportantInput">
+                        Not Important
+                    </label>
+                </div>
+
+                <button class="newNoteButton" type="submit">
+                    Create Note
+                </button>
+            </form>
+        </div>
+
+        <script src="./src/scripts/add-note.js"></script>
+    </body>
+</html>

@@ -1,0 +1,17 @@
+.container {
+    border: 0.5px solid grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    margin: 10px auto;
+    max-width: 50%;
+}
+
+.newNoteForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
