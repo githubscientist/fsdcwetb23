@@ -391,3 +391,39 @@ The box model is a box that wraps around every HTML element. It consists of:
 
 - The Fetch API is a modern way to make HTTP requests in JavaScript.
 - It is a promise-based API that provides a more powerful and flexible feature set than the XHR API.
+
+#### ES5 vs ES6
+
+ES5
+
+- EcmaScript 5
+- It is the fifth edition of the ECMAScript standard.
+- It was released in 2009.
+
+ES6
+
+- EcmaScript 6
+- It is the sixth edition of the ECMAScript standard.
+- It was released in 2015.
+- It introduced many new features and improvements to the JavaScript language.
+
+Low Level Language:
+
+- A low-level language is a programming language that is closer to the machine code and hardware.
+- It is a language that is difficult to read and write for humans.
+- It does not have rich libraries and frameworks to work with.
+- Examples: Assembly language, C, C++
+
+High Level Language:
+
+- A high-level language is a programming language that is closer to human language and easier to read and write.
+- It is a language that is easier to understand and use for humans.
+- It will have rich libraries and frameworks to work with.
+- Examples: Python, Java, JavaScript, Ruby
+
+Object Oriented Programming (OOP):
+
+- OOP is a programming paradigm that is based on the concept of objects(real-world entities).
+- It is a way of organizing code into reusable and modular components.
+
+JavaScript is a object-based language not a object-oriented langauge because it does not support all the features of OOP like inheritance, encapsulation, and polymorphism in a traditional way.
