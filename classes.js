@@ -5,29 +5,38 @@
 // class definiiton
 class Car {
     // constructor -> special method which gets called when we create an instance of the class
-    constructor() {
-        this.make = '';
-        this.model = '';
-        this.year = 0;
-        this.color = '';
+    constructor(make, model, year, color) {
+        this.make = make;
+        this.model = model;
+        this.year = year;
+        this.color = color;
+    }
+
+    // method -> function inside a class
+    getPrice() {
+        if (this.model === 'Corolla') {
+            return 25000;
+        } else if (this.model === 'Civic') {
+            return 22000;
+        } else {
+            return 20000;
+        }
     }
 }
 
 // we can now take copies of this class by creating instances or objects
 // object -> is an instance of a class
 
-const car1 = new Car();
-const car2 = new Car();
+const car1 = new Car('Toyota', 'Corolla', 2020, 'Red');
+const car2 = new Car('Honda', 'Civic', 2021, 'Blue');
 
-car1.make = 'Toyota';
-car1.model = 'Corolla';
-car1.year = 2020;
-car1.color = 'Red';
+/*
+    car1 = Car {
+        make: 'Toyota',
+        model: 'Corolla',
+        year: 2020,
+        color: 'Red'
+    }
+*/
 
-car2.make = 'Honda';
-car2.model = 'Civic';
-car2.year = 2021;
-car2.color = 'Blue';
-
-console.log(car1);
-console.log(car2); 
+console.log(car2.getPrice());
