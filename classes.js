@@ -22,6 +22,10 @@ class Car {
             return 20000;
         }
     }
+
+    printDetails() {
+        console.log(`Car Details: ${this.make} ${this.model}, Year: ${this.year}, Color: ${this.color}`);
+    }
 }
 
 // we can now take copies of this class by creating instances or objects
@@ -39,4 +43,7 @@ const car2 = new Car('Honda', 'Civic', 2021, 'Blue');
     }
 */
 
-console.log(car2.getPrice());
+// console.log(car1.model, car1.getPrice());
+
+car1.printDetails();
+car2.printDetails();
